@@ -5,6 +5,7 @@ include "../partials/head.php";
 
 
 ?>
+<link rel="stylesheet" href="../assets/main.css">
 <nav class="navbar navbar-inverse " role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -22,13 +23,24 @@ include "../partials/head.php";
         <ul class="nav navbar-nav">
             <li class="active"><a href="views/login.php">Link</a></li>
             <li><a href="#">Link</a></li>
-           <li><a href="">hola:<label> <?= $_SESSION['name'];?></label></a></li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="">hola:<label class="label label-primary"><?= $_SESSION['name'];?></label></a></li>
             <li><a href="logout.php">Cerrar sesion</a></li>
         </ul>
 
 
     </div><!-- /.navbar-collapse -->
 </nav>
+<ul id="sidebar">
+
+    <li><a href="">Registrar Proveedores</a></li>
+    <li><a href="">Registar Pedidos</a></li>
+
+</ul>
+
+
 <?php
 include "../partials/footer.php";
 ?>
