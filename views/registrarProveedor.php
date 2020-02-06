@@ -5,7 +5,7 @@ include "../partials/head.php";
 
 
 ?>
-<link rel="stylesheet" href="../assets/main.css">
+
 <nav class="navbar navbar-inverse " role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -33,14 +33,10 @@ include "../partials/head.php";
 
     </div><!-- /.navbar-collapse -->
 </nav>
-<ul id="sidebar">
 
-    <li><a href="registrarProveedor.php">Registrar Proveedores</a></li>
-    <li><a href="registrarPedido.php">Registar Pedidos</a></li>
-
-</ul>
 
 
 <?php
 include "../partials/footer.php";
 ?>
+
