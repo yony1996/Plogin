@@ -11,25 +11,20 @@ include "../partials/nav.php";
                     <div class='panel-body'>
 
                         <h1>Registrarse</h1>
-                        <form action="" method="POST" role="form">
-
+                        <form method="post" action="../assets/crear-cuenta.php" method="POST">
                             <div class="form-group">
-                                <label for="exampleFormControlSelect1"></label>
-                                <div class="form-group">
-                                    <input class='form-control' type='text' name='' required autofocus placeholder='Nombre'>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class='form-control' name="" required placeholder="Usuario">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class='form-control' name="" required placeholder="Correo">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class='form-control' name="" required placeholder="Clave">
+                                <input type="text" class="form-control" name="Name" placeholder="Enter your name" required>
                             </div>
 
-                            <button class='btn btn-primary btn-lg btn-block' type="submit" name="submit" class="btn btn-primary">Guardar</button>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="Email" aria-describedby="emailHelp" placeholder="Enter your email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="Password" placeholder="Create Password" required>
+                            </div>
+
+                            <button type="submit" class="btn btn-success btn-block">Create my account</button>
                         </form>
 
                     </div>

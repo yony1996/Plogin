@@ -11,18 +11,18 @@ include "../partials/nav.php";
                     <div class='panel-body'>
 
                         <h1>Login</h1>
-                        <form action="" method="POST" role="form">
+                        <form action="../assets/validacion.php" method="POST" role="form">
 
 
                             <div class="form-group">
                                 <label for="exampleFormControlSelect1"></label>
                                 <div class="form-group">
-                                    <input class='form-control' type='text' name='' required autofocus placeholder='Usuario'>
+                                    <input class='form-control' type='text' name='Email' required autofocus placeholder='Usuario'>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <input type="password" class='form-control' name="" required placeholder="Clave">
+                                <input type="password" class='form-control' name="Password" required placeholder="Clave">
                             </div>
 
                             <button class='btn btn-primary btn-lg btn-block' type="submit" name="submit" class="btn btn-primary">Guardar</button>

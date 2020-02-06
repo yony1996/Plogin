@@ -14,7 +14,7 @@
 	<div class="collapse navbar-collapse navbar-ex1-collapse">
 		<ul class="nav navbar-nav">
 			<li class="active"><a href="views/login.php">Link</a></li>
-			<li><a href="#">Link</a></li>
+			<li><a href="views/registrar.php">Link</a></li>
 		</ul>
 
 
