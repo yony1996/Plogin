@@ -41,7 +41,7 @@ include "../partials/head.php";
                 <div class='panel panel-body'>
                     <div class='panel-body'>
 
-                        <h1>Login</h1>
+                        <h1>Registrar Pedido</h1>
                         <form action="../assets/validacion.php" method="POST" role="form">
 
 

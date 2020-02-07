@@ -26,7 +26,7 @@ include "../partials/head.php";
 
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="">hola:<label class="label label-primary"><?= $_SESSION['name'];?></label></a></li>
+            <li><a href="">hola:<label class="label label-primary"><?= $_SESSION['name']; ?> | <?= $_SESSION['rol']==1?'Admin':'Cliente'?> </label></a></li>
             <li><a href="logout.php">Cerrar sesion</a></li>
         </ul>
 

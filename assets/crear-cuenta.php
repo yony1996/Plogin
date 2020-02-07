@@ -18,12 +18,13 @@ if ($count==1){
     $name = $_POST['Name'];
     $email = $_POST['Email'];
     $pass = $_POST['Password'];
+    $rol = $_POST['Role'];
 
     // The password_hash() function convert the password in a hash before send it to the database
     $passHash = password_hash($pass, PASSWORD_DEFAULT);
 
     // Query to send Name, Email and Password hash to the database
-    $query = "INSERT INTO users (Name, Email, Password) VALUES ('$name', '$email', '$passHash')";
+    $query = "INSERT INTO users (Users, Email, Password,Role) VALUES ('$name', '$email', '$passHash','$rol')";
 
     if (mysqli_query($conn, $query)) {
         echo "<div class='alert alert-success mt-4' role='alert'><h3>Your account has been created.</h3>

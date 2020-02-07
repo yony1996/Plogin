@@ -23,6 +23,9 @@ include "../partials/nav.php";
                             <div class="form-group">
                                 <input type="password" class="form-control" name="Password" placeholder="Create Password" required>
                             </div>
+                            <div class="form-group">
+                                <input type="hidden" class="form-control" name="Role" value="2">
+                            </div>
 
                             <button type="submit" class="btn btn-success btn-block">Create my account</button>
                         </form>

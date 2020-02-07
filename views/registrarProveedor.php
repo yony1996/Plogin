@@ -34,6 +34,38 @@ include "../partials/head.php";
     </div><!-- /.navbar-collapse -->
 </nav>
 
+<div class='container'>
+    <div class='starter-template'>
+
+        <div class='row'>
+            <div class='col-md-4 col-md-offset-4'>
+                <div class='panel panel-body'>
+                    <div class='panel-body'>
+
+                        <h1></h1>
+                        <form action="../assets/insertar.php" method="POST" role="form">
+
+
+
+
+                            <div class="form-group">
+                                <input type="text" class='form-control' name="proveedor" required placeholder="proveedor">
+                            </div>
+
+                            <button class='btn btn-primary btn-lg btn-block' type="submit" name="submit" class="btn btn-primary">Guardar</button>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+</div>
 
 
 <?php
