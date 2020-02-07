@@ -33,6 +33,7 @@ include "../partials/head.php";
 
     </div><!-- /.navbar-collapse -->
 </nav>
+
 <div class='container'>
     <div class='starter-template'>
 

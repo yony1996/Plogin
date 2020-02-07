@@ -42,17 +42,18 @@ include "../partials/head.php";
                 <div class='panel panel-body'>
                     <div class='panel-body'>
 
-                        <h1></h1>
-                        <form action="../assets/insertar.php" method="POST" role="form">
-
-
-
-
+                        <h1>Registrar proveedor</h1>
+                        <form method="post" action="../assets/insertarProveedor.php" method="POST">
                             <div class="form-group">
-                                <input type="text" class='form-control' name="proveedor" required placeholder="proveedor">
+                                <input type="text" class="form-control" name="proveedor" placeholder="Enter your name" required>
                             </div>
 
-                            <button class='btn btn-primary btn-lg btn-block' type="submit" name="submit" class="btn btn-primary">Guardar</button>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="Email" aria-describedby="emailHelp" placeholder="Enter your email" required>
+                            </div>
+
+
+                            <button type="submit" class="btn btn-success btn-block">Create my account</button>
                         </form>
 
                     </div>

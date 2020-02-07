@@ -26,13 +26,20 @@ include "../partials/head.php";
 
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="">hola:<label class="label label-primary"><?= $_SESSION['name']; ?> | <?= $_SESSION['rol']==1?'Admin':'Cliente'?> </label></a></li>
+            <li><a>hola:<label class="label label-primary"><?= $_SESSION['name']; ?> |
+            <?php if($_SESSION['rol']==1){ echo'Admin';?>
+           <?php }elseif ($_SESSION['rol']==2){echo'Cliente';?>
+                        <?php }else{
+                echo'Proveedor';
+            }?>
+            </label></a></li>
             <li><a href="logout.php">Cerrar sesion</a></li>
         </ul>
 
 
     </div><!-- /.navbar-collapse -->
 </nav>
+<?php if($_SESSION['rol']==1) {?>
 <ul id="sidebar">
 
     <li><a href="registrarProveedor.php">Registrar Proveedores</a></li>
@@ -40,7 +47,16 @@ include "../partials/head.php";
 
 </ul>
 
+<?php }?>
+<?php if($_SESSION['rol']==3) {?>
+    <ul id="sidebar">
 
+
+        <li><a href="">Ver Pedidos</a></li>
+
+    </ul>
+
+<?php }?>
 <?php
 include "../partials/footer.php";
 ?>
