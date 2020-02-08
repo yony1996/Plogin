@@ -51,7 +51,7 @@ include "../partials/head.php";
 <?php if($_SESSION['rol']==3) {?>
     <ul id="sidebar">
 
-
+        <li><a href="registrarProducto.php">Registrar Producto</a></li>
         <li><a href="">Ver Pedidos</a></li>
 
     </ul>
