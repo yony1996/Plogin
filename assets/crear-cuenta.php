@@ -2,7 +2,7 @@
 include '../conexion/conexion.php';
 $conn=mysqli_connect("localhost","root","","bd_login");
 
-$checkEmail = "SELECT * FROM users WHERE Email = '$_POST[Email]' ";
+$checkEmail = "SELECT * FROM user WHERE Email = '$_POST[Email]' ";
 
 $result = $conn-> query($checkEmail);
 
@@ -24,7 +24,7 @@ if ($count==1){
     $passHash = password_hash($pass, PASSWORD_DEFAULT);
 
     // Query to send Name, Email and Password hash to the database
-    $query = "INSERT INTO users (Users, Email, Password,Role) VALUES ('$name', '$email', '$passHash','$rol')";
+    $query = "INSERT INTO user (Users, Email, Password,Role) VALUES ('$name', '$email', '$passHash','$rol')";
 
     if (mysqli_query($conn, $query)) {
         echo "<div class='alert alert-success mt-4' role='alert'><h3>Your account has been created.</h3>

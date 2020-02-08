@@ -3,7 +3,7 @@ include '../conexion/conexion.php';
 $conn=mysqli_connect("localhost","root","","bd_login");
 
 
-    $checkEmail = "SELECT * FROM users WHERE Email = '$_POST[Email]' ";
+    $checkEmail = "SELECT * FROM user WHERE Email = '$_POST[Email]' ";
     $result = $conn->query($checkEmail);
 
     $count = mysqli_num_rows($result);
@@ -21,7 +21,7 @@ $conn=mysqli_connect("localhost","root","","bd_login");
         $password="root1234";
         $passHash = password_hash($password, PASSWORD_DEFAULT);
 
-        $insert = "INSERT INTO users (Users, Email, Password,Role)VALUES('$name', '$email','$passHash','$rol')";
+        $insert = "INSERT INTO user (Users, Email, Password,Role)VALUES('$name', '$email','$passHash','$rol')";
         $result = mysqli_query($conn, $insert);
         if (!$result) {
 

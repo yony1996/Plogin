@@ -6,7 +6,7 @@ $email = $_POST['Email'];
 $password = $_POST['Password'];
 
 //seleccion de los datos del usuario
-$result = mysqli_query($conn, "SELECT Users,Email,Password,Role FROM users WHERE Email = '$email'");
+$result = mysqli_query($conn, "SELECT Users,Email,Password,Role FROM user WHERE Email = '$email'");
 //almacenamiento de reultados en un array
 $row = mysqli_fetch_assoc($result);
 //password encriptada
