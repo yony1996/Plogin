@@ -43,7 +43,7 @@ include "../partials/head.php";
                     <div class='panel-body'>
 
                         <h1>Registrar Producto</h1>
-                        <form method="post" action="../assets/insertarProveedor.php" method="POST">
+                        <form  action="../assets/insertarProducto.php" method="POST">
                             <div class="form-group">
                                 <input type="text" class="form-control" name="nombre" placeholder="Nombre del producto" required>
                             </div>
@@ -55,12 +55,12 @@ include "../partials/head.php";
                                 <input type="text" class="form-control" name="tamano"  placeholder="Tamaño" required>
                             </div>
                             <div class="form-group">
-                                <input type="hidden" class="form-control" name="tamano"  value="<?= $_SESSION['id']?>" required>
+                                <input type="hidden" class="form-control" name="id_proveedor"  value="<?= $_SESSION['id']?>" required>
                             </div>
 
 
 
-                            <button type="submit" class="btn btn-success btn-block">Create my account</button>
+                            <button type="submit" class="btn btn-success btn-block">Guardar</button>
                         </form>
 
                     </div>
