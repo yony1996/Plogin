@@ -1,7 +1,7 @@
 <?php
 session_start();
 include "../conexion/conexion.php";
-$conn=mysqli_connect("localhost","root","","bd_login");
+$conn = mysqli_connect("localhost", "root", "", "bd_login");
 $email = $_POST['Email'];
 $password = $_POST['Password'];
 
@@ -12,18 +12,21 @@ $row = mysqli_fetch_assoc($result);
 //password encriptada
 $hash = $row['Password'];
 
-if (password_verify($_POST['Password'],$hash)){
+
+if (password_verify($_POST['Password'], $hash)) {
 
     $_SESSION['loggedin'] = true;
     $_SESSION['id'] = $row['id'];
     $_SESSION['name'] = $row['Users'];
-   $_SESSION['rol']=$row['Role'];
+    $_SESSION['rol'] = $row['Role'];
     $_SESSION['start'] = time();
-    $_SESSION['expire'] = $_SESSION['start'] + (1 * 60) ;
+    $_SESSION['expire'] = $_SESSION['start'] + (1 * 60);
 
-   header("location:../views/home.php");
 
-}else{
+    header("location:../views/home.php");
+
+} else {
+
 
     header("location:../partials/error.php");
 

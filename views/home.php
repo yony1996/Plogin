@@ -44,6 +44,7 @@ include "../partials/head.php";
 
     <li><a href="registrarProveedor.php">Registrar Proveedores</a></li>
     <li><a href="registrarPedido.php">Registar Pedidos</a></li>
+    <li><a href="tabla.php">Listar Usuarios</a></li>
 
 </ul>
 
