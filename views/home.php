@@ -58,6 +58,8 @@ include "../partials/head.php";
     </ul>
 
 <?php }?>
+
+
 <?php
 include "../partials/footer.php";
 ?>
