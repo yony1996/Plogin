@@ -18,7 +18,7 @@ if (mysqli_num_rows($result) > 0) {
     $subject = "Your password for PHP Login";
     $body = "Your password is:" . $row['Password'];
 
-    $headers = 'From: yonyvenegas@gmail.com' . "\r\n" .
+    $headers = 'From: yonyvenegas@gmail.com'. "\r\n" .
         'Reply-To: yonyvenegas@gmail.com' . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
 
