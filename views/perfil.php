@@ -8,7 +8,7 @@ include "../partials/head.php";
 
 <nav class="navbar navbar-inverse " role="navigation">
     <a class="navbar-brand" href="#">
-        <img src="../3c1951c5a7136553887751216d7f5961.jpg" class="img-circle" width="30" height="30" alt="User">
+        <img src="../img/3c1951c5a7136553887751216d7f5961.jpg" class="img-circle" width="30" height="30" alt="User">
     </a>
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -48,7 +48,7 @@ include "../partials/head.php";
 <div class="container">
     <div class="row">
         <div class="col-sm-3">
-            <img src="../3c1951c5a7136553887751216d7f5961.jpg" class="img-thumbnail" alt="User">
+            <img src="../img/<?=$_SESSION['img'];?>" class="img-thumbnail" alt="User">
         </div>
         <div class="col-md-8">
             <div class="panel panel-info ">
@@ -65,7 +65,9 @@ include "../partials/head.php";
 
                                 </span>
 
-                                <a href="editarPerfil.php" class="btn btn-primary">Editar</a>
+                                <a class='btn btn-primary btn-lg btn-block' type="submit" name="submit"
+                                   class="btn btn-primary" id="id_per" href="editarPerfil.php?id=<?php echo $_SESSION['id']; ?>">Editar Perfil
+                                </a>
 
                             </div>
                             <div class="card-footer text-muted">

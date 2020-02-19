@@ -9,7 +9,7 @@ include "../partials/head.php";
 
 <nav class="navbar navbar-inverse " role="navigation">
     <a class="navbar-brand" href="perfil.php">
-        <img src="../3c1951c5a7136553887751216d7f5961.jpg" style="border-radius: 160px;" width="30" height="30" alt="User">
+        <img src="../img/3c1951c5a7136553887751216d7f5961.jpg" style="border-radius: 160px;" width="30" height="30" alt="User">
     </a>
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
