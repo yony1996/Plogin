@@ -13,14 +13,17 @@ $row = mysqli_fetch_assoc($result);
 $hash = $row['Password'];
 
 
+
 if (password_verify($_POST['Password'], $hash)) {
 
     $_SESSION['loggedin'] = true;
     $_SESSION['id'] = $row['id'];
+    $_SESSION['Email']=$row['Email'];
     $_SESSION['name'] = $row['Users'];
     $_SESSION['rol'] = $row['Role'];
     $_SESSION['start'] = time();
     $_SESSION['expire'] = $_SESSION['start'] + (1 * 60);
+
 
 
     header("location:../views/home.php");

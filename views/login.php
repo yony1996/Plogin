@@ -37,7 +37,7 @@ include "../partials/nav.php";
 
 
                             <button class='btn btn-primary btn-lg btn-block' type="submit" name="submit"
-                                    class="btn btn-primary">Guardar
+                                    class="btn btn-primary">Ingresar
                             </button>
                         </form>
                         <p><a href="#showForm" data-toggle="collapse" aria-expanded="false" aria-controls="collapse">Olvidaste
