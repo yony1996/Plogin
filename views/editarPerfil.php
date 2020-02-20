@@ -93,8 +93,7 @@ include "../partials/head.php";
                                 <div class="input-group">
                                     <div class="input-group-addon ">
                                         &#128444;</div>
-                                    <input type="file" id="imagen" class='form-control' accept="image/jpeg, .png, .jpg" name="imagen"
-                                           placeholder="Imagen de perfil">
+                                    <input type="file" id="imagen" class='form-control' accept="image/jpeg, .png, .jpg" name="imagen">
 
                                 </div>
 
